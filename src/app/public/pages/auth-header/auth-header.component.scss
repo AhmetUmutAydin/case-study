@@ -1,0 +1,10 @@
+@import "../../../../assets/scss/variables";
+
+.login-panel {
+  &__subtitle {
+    flex-direction: column;
+    > p {
+      font-size: $font-md;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+<div *ngIf="{ users: users$ | async } as data" class="d-flex wrapper">
+  <div class="sidebar-wrapper full-screen-for-mobile">
+    <h2 class="sidebar-wrapper__title">Kullanıcı Listesi</h2>
+    <div class="user-list d-flex flex-column">
+      <ng-container *ngFor="let user of data.users">
+        <app-user-card [user]="user"></app-user-card>
+      </ng-container>
+      <div class="d-flex justify-content-center">
+        <a class="btn-link" (click)="loadMore()">Daha Fazla Yükle</a>
+      </div>
+    </div>
+  </div>
+  <div
+    class="content-wrapper d-flex flex-column justify-content-center align-items-center hide-for-mobile"
+  >
+    <img src="assets/images/mega-creator 1.png" />
+    <h2 class="margin-top-30">Google Maps’e Hoşgeldiniz</h2>
+  </div>
+</div>

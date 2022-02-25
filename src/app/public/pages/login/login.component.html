@@ -1,0 +1,23 @@
+<app-auth-card>
+  <app-auth-header text="Google Maps’e Hosgeldiniz."></app-auth-header>
+  <form [formGroup]="loginForm" (ngSubmit)="login()">
+    <app-input-text
+      labelText="E-Mail"
+      placeholder="E-mail adresinizi giriniz"
+      formControlName="email"
+      type="email"
+    ></app-input-text>
+
+    <app-input-text
+      labelText="Şifre"
+      type="password"
+      placeholder="******"
+      formControlName="password"
+    ></app-input-text>
+
+    <div class="d-flex justify-content-end margin-bottom-30">
+      <a class="btn-link" href="/forget-password">Şifremi Unuttum</a>
+    </div>
+    <button class="btn-block btn-primary" type="submit">Giriş Yap</button>
+  </form>
+</app-auth-card>

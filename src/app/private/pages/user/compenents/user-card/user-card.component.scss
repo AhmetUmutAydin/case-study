@@ -1,0 +1,25 @@
+@import "assets/scss/variables";
+
+.user-card {
+  &__image {
+    width: 2.8125rem;
+    height: 2.8125rem;
+    border-radius: 12.5rem;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+  &__name {
+    font-size: $font-md;
+    color: $lightblue;
+    line-height: 1.3125rem;
+  }
+  &__email {
+    font-size: $font-sm;
+    color: $lightgrey;
+    line-height: 0.875rem;
+  }
+  &__phone {
+    font-size: $font-sm;
+    color: $lightgrey;
+    line-height: 0.875rem;
+  }
+}

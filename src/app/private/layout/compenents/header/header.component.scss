@@ -1,0 +1,15 @@
+@import "assets/scss/mixins";
+
+.header {
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__logo {
+    width: 11.25rem;
+  }
+  @include breakpoint-down(medium) {
+    justify-content: flex-start;
+    margin-left: 1rem;
+  }
+}

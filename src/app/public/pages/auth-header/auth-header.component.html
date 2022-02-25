@@ -1,0 +1,9 @@
+<div [ngClass]="containerClass">
+  <div class="login-panel__header d-flex justify-content-center">
+    <img class="login-panel__header-img" src="assets/images/logo.svg" />
+  </div>
+  <div class="login-panel__subtitle d-flex align-items-center margin-top-30">
+    <p>{{ text }}</p>
+    <p *ngIf="subText">{{ subText }}</p>
+  </div>
+</div>

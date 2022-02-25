@@ -1,0 +1,12 @@
+<div class="user-card d-flex">
+  <div class="d-flex align-items-center margin-bottom-25">
+    <img class="user-card__image margin-right-12" [src]="user.picture" />
+    <div class="user-card__content">
+      <p class="user-card__name">
+        {{ user.title }}. {{ user.firstName }} {{ user.lastName }}
+      </p>
+      <p class="user-card__email">Email: {{ user.email }}</p>
+      <p class="user-card__phone">Phone: {{ user.phone }}</p>
+    </div>
+  </div>
+</div>

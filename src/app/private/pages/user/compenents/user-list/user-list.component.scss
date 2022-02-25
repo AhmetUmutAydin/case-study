@@ -1,0 +1,36 @@
+@import "assets/scss/variables";
+@import "assets/scss/mixins";
+
+.sidebar-wrapper {
+  width: 22.5rem;
+  border-right: 1px solid $bordergrey;
+  padding: 1.5rem 1.75rem 1.5rem 1.75rem;
+  @include breakpoint-down(medium) {
+    border-right: 0;
+  }
+  &__title {
+    margin-bottom: 1.87rem;
+    @include breakpoint-down(medium) {
+      font-size: $font-md;
+      line-height: 1.3125rem;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.content-wrapper {
+  width: calc(100% - 22.5rem);
+}
+
+.wrapper {
+  background-color: $white;
+  height: calc(100vh - 4rem);
+}
+
+.user-list {
+  height: calc(100% - 3rem);
+  overflow-y: hidden;
+  &:hover {
+    overflow: auto;
+  }
+}
