@@ -1,6 +1,6 @@
 # CaseStudy
 
-https://case-study-gamma.vercel.app/
+https://case-study-ebon.vercel.app/
 
 
 Angular : 13
